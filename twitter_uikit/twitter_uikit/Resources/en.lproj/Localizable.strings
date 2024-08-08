@@ -1,0 +1,8 @@
+//Login Scene
+"loginScreenTitle" = "See what's happening in the world right now.";
+"google" = "Continue with Google";
+"apple" = "Continue with Apple";
+"create" = "Create Account";
+"policyInfo" = "By signing up, you agree to out Terms, Privacy, Policy, and Cookie Use";
+"loginTitle" = "Have an account already?";
+"loginButton" = "Log in";
