@@ -15,7 +15,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = UINavigationController(rootViewController: LoginScene())
+        let twitterModelViewModel = TwitterModel.sampleTwitterData.first ?? TwitterModel(title: " ")
+        let viewModel = MainVisibilityViewModel(model: twitterModelViewModel)
+        window?.rootViewController = UINavigationController(rootViewController: MainVisibilityScene(viewModel: viewModel))
         window?.makeKeyAndVisible()
     }
 
